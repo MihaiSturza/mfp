@@ -8,7 +8,7 @@ const prodConfig = {
     mode: 'production',
     output: {
         filename: '[name].[contenthash].js', // for cashing issues
-        publicPath: '/marketing/latest/'
+        publicPath: '/upl/latest/'
     },
     plugins: [
         new ModuleFederationPlugin({
