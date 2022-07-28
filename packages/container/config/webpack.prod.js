@@ -15,7 +15,7 @@ const prodConfig = {
         new ModuleFederationPlugin({
             name: 'container',
             remotes: {
-                marketing: `marketing@${domain}/marketing/latest/remoteEntry.js`,
+                marketing: `upl@${domain}/marketing/latest/remoteEntry.js`,
                 auth: `auth@${domain}/auth/latest/remoteEntry.js`,
             },
             shared: packageJson.dependencies,
@@ -24,6 +24,3 @@ const prodConfig = {
 }
 
 module.exports = merge(commonConfig, prodConfig)
-
-
-// marketing  --> http.amplify ?? axios

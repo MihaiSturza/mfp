@@ -79,7 +79,7 @@ export default function Album() {
               color="textPrimary"
               gutterBottom
             >
-              Home Page
+              Unsecured Personal Loans
             </Typography>
             <Typography
               variant="h5"
@@ -87,9 +87,9 @@ export default function Album() {
               color="textSecondary"
               paragraph
             >
-              Something short and leading about the collection below—its
-              contents, the creator, etc. Make it short and sweet, but not too
-              short so folks don&apos;t simply skip over it entirely.
+              See if you’re eligible for an Admiral Loan.
+              No impact to your credit score
+              See a guaranteed rate if you’re accepted
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justifyContent="center">

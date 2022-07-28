@@ -12,10 +12,10 @@ const prodConfig = {
     },
     plugins: [
         new ModuleFederationPlugin({
-            name: 'marketing',
+            name: 'upl',
             filename: 'remoteEntry.js',
             exposes: {
-                './MarketingApp': './src/bootstrap'
+                './PersonalLoans': './src/bootstrap'
             },
             shared: packageJson.dependencies,
         })
