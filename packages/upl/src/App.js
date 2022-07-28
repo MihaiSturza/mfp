@@ -23,5 +23,3 @@ export default ({ history }) => {
         </div>
     )
 }
-
-// trying to trigger a change
