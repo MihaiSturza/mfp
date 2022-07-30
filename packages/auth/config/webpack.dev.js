@@ -11,7 +11,8 @@ const devConfig = {
     },
     devServer: {
         port: 8082,
-        historyApiFallback: true
+        historyApiFallback: true,
+        openPage: 'auth/signin' // nice feature :)
     },
     plugins: [
         new ModuleFederationPlugin({
@@ -21,7 +22,7 @@ const devConfig = {
                 './AuthApp': './src/bootstrap'
             },
             shared: packageJson.dependencies
-        }),
+        })
     ]
 }
 
