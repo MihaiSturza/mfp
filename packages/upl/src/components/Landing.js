@@ -88,7 +88,7 @@ export default function Album() {
               paragraph
             >
               See if you’re eligible for an Admiral Loan.
-              No impact to your credit score
+              No impact to your credit score.
               See a guaranteed rate if you’re accepted
             </Typography>
             <div className={classes.heroButtons}>

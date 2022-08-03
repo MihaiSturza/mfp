@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useState } from 'react';
+import React, { lazy, Suspense, useEffect, useState } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { StylesProvider, createGenerateClassName } from '@material-ui/core/styles';
 import Header from './components/Header';
@@ -15,6 +15,13 @@ const generateClassName = createGenerateClassName({
 
 export default () => {
     const [isSignin, setIsSignin] = useState(false);
+
+    useEffect(() => {
+        if (isSignin) {
+            console.log("Signed in!")
+        }
+
+    }, [isSignin])
     return (
         <BrowserRouter>
             <StylesProvider generateClassName={generateClassName}>
@@ -29,5 +36,3 @@ export default () => {
         </BrowserRouter>
     )
 }
-
-// trigger rebuild
